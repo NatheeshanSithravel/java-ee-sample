@@ -55,7 +55,19 @@
 				</exclusion>
 			</exclusions>
 		   </dependency>
+			<!-- JBoss Logging API -->
+			<dependency>
+				<groupId>org.jboss.logging</groupId>
+				<artifactId>jboss-logging</artifactId>
+				<version>3.5.0.Final</version>
+			</dependency>
 
+			<!-- JBoss LogManager -->
+			<dependency>
+				<groupId>org.jboss.logmanager</groupId>
+				<artifactId>jboss-logmanager</artifactId>
+				<version>2.1.12.Final</version>
+			</dependency>
 	</dependencies>
 
 
