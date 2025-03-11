@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakarta EE Logback Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jakarta EE 10 Logback Demo</h1>
+    
+    <div class="container">
+        <h2>Test Log Messages</h2>
+        <p>Click the buttons below to generate different log levels:</p>
+        
+        <button onclick="fetch('/jakarta-logback-demo/api/messages/debug')">Debug Log</button>
+        <button onclick="fetch('/jakarta-logback-demo/api/messages/info')">Info Log</button>
+        <button onclick="fetch('/jakarta-logback-demo/api/messages/warn')">Warning Log</button>
+        <button onclick="fetch('/jakarta-logback-demo/api/messages/error')">Error Log</button>
+        
+        <p>Check the server logs to see the output.</p>
+    </div>
+    
+    <div class="container">
+        <h2>About</h2>
+        <p>This application demonstrates Logback integration with Jakarta EE 10 on WildFly.</p>
+        <p>The application uses:</p>
+        <ul>
+            <li>Java 21</li>
+            <li>Jakarta EE 10 Web Profile</li>
+            <li>SLF4J 2.0.9</li>
+            <li>Logback 1.4.11</li>
+        </ul>
+    </div>
+</body>
+</html>
